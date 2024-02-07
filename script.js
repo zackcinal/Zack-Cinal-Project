@@ -124,7 +124,7 @@ const weatherUrl =
 fetch(weatherUrl)
   .then((res) => res.json())
   .then((res) => {
-    console.log(res)
+    console.log(res);
 
     displayWeather(res);
   });
@@ -138,7 +138,7 @@ function displayWeather(currentWeather) {
           <div class="temp-card">
           <p>Track Temperature: ${temperature} F</p>
           <p>Rain: ${rain}</p>
-            <p>Wind: ${wind}</p>
+          <p>Wind: ${wind}</p>
           </div>
         `;
 
