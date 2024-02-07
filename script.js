@@ -189,7 +189,7 @@ function displayCon(constructor) {
     constructor.MRData.StandingsTable.StandingsLists[0].ConstructorStandings[2]
       .Constructor.name;
   let points3 =
-    constructor.MRData.StandingsTable.StandingsLists[0].ConstructorStandings[3]
+    constructor.MRData.StandingsTable.StandingsLists[0].ConstructorStandings[2]
       .points;
 
   const mockCons3 = `
@@ -199,8 +199,44 @@ function displayCon(constructor) {
       <p>${points3}</p>
     </div>
     `;
+  let pos4 =
+    constructor.MRData.StandingsTable.StandingsLists[0].ConstructorStandings[3]
+      .position;
+  let name4 =
+    constructor.MRData.StandingsTable.StandingsLists[0].ConstructorStandings[3]
+      .Constructor.name;
+  let points4 =
+    constructor.MRData.StandingsTable.StandingsLists[0].ConstructorStandings[3]
+      .points;
+
+  const mockCons4 = `
+    <div class = "constructor-card">
+      <p>${pos4}</p>
+      <p>${name4}</p>
+      <p>${points4}</p>
+    </div>
+    `;
+  let pos5 =
+    constructor.MRData.StandingsTable.StandingsLists[0].ConstructorStandings[4]
+      .position;
+  let name5 =
+    constructor.MRData.StandingsTable.StandingsLists[0].ConstructorStandings[4]
+      .Constructor.name;
+  let points5 =
+    constructor.MRData.StandingsTable.StandingsLists[0].ConstructorStandings[4]
+      .points;
+
+  const mockCons5 = `
+    <div class = "constructor-card">
+      <p>${pos5}</p>
+      <p>${name5}</p>
+      <p>${points5}</p>
+    </div>
+    `;
 
   constructors.insertAdjacentHTML("beforeend", mockCons1);
   constructors.insertAdjacentHTML("beforeend", mockCons2);
   constructors.insertAdjacentHTML("beforeend", mockCons3);
+  constructors.insertAdjacentHTML("beforeend", mockCons4);
+  constructors.insertAdjacentHTML("beforeend", mockCons5);
 }
